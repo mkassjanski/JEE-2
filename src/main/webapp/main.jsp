@@ -17,13 +17,17 @@
         <c:choose>
             <c:when test="${students.size() > 0}">
                 <table class="zui-table zui-table-horizontal zui-table-highlight">
+                <thead>
                     <tr>
                         <th>#</th>
                         <th>Name</th>
                         <th>Surname</th>
                         <th>Sex</th>
                         <th>Pesel</th>
+                        <th>Sctions</th>
                     </tr>
+                    </thead>
+                    <tbody>
                     <c:forEach var="student" items="${students}" varStatus="loopCounter">
                         <tr>
                             <td>${student.id}</td>
@@ -38,6 +42,7 @@
                             </td>
                         </tr>
                     </c:forEach>
+                    </tbody>
                 </table>
 
             </c:when>
