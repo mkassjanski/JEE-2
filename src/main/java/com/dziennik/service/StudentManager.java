@@ -28,7 +28,7 @@ public class StudentManager {
 	}
 
 	@SuppressWarnings("unchecked")
-	public List<Student> getAllPersons() {
+	public List<Student> getAllStudent() {
 		return em.createNamedQuery("student.all").getResultList();
 	}
 }

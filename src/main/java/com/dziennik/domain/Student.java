@@ -15,7 +15,7 @@ public class Student implements Serializable {
 	 
 	 private String name;
 	 private String surname;
-	 private String plec;
+	 private String sex;
 	 private long pesel;
 	 
 
@@ -57,13 +57,13 @@ public class Student implements Serializable {
 	}
 
 
-	public String getPlec() {
-		return plec;
+	public String getSex() {
+		return sex;
 	}
 
 
-	public void setPlec(String plec) {
-		this.plec = plec;
+	public void setSex(String sex) {
+		this.sex = sex;
 	}
 
 
