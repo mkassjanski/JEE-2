@@ -6,17 +6,17 @@
 <html lang="en">
 <head>
 </head>
-
+<jsp:include page="include/header.jsp" />
 <body>
 
-<div class="container">
-    <div class="row">
+<div>
+    <div>
         <h3>Students</h3>
         <br/>
 
         <c:choose>
             <c:when test="${students.size() > 0}">
-                <table >
+                <table class="zui-table zui-table-horizontal zui-table-highlight">
                     <tr>
                         <th>#</th>
                         <th>Name</th>
