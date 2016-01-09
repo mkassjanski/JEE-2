@@ -1,4 +1,5 @@
 package com.dziennik.service;
+import java.util.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +16,7 @@ public class StudentManager {
     
 	public void addStudent(Student student) {
 		student.setId(null);
+		student.setCreatedAt(new Date());
 		em.persist(student);
 	}
 	public void updateStudent(Student student){
