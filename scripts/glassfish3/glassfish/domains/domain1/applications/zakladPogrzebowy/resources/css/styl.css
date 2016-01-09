@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FF69B4;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+table{
+  border-style: double;
+  border-color: #000000;
+  border-width: 5px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th{
+  border-style: solid;
+  border-color: #000000;
+  border-width: 2px;
+  background-color: #FFDAB9;
+  padding: 2px;
+}
+
+td{
+  border-style: solid;
+  border-color: #000000;
+  border-width: 2px;
+  background-color: #E6E6FA;
+  padding: 2px;
+}
+
+.s1 {
+  color: #330033;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  font-family: Arial;
+  padding-bottom: 20px;
+}
+
+.s2 {
+  text-align: center;
+  color: #000033;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  font-family: Calibri, sans-serif;
+  padding-bottom: 20px;
+}
+
+.s3 {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  font-family: Calibri, sans-serif;
+  padding-bottom: 20px;
+}
+
+.link{
+}
+
+.link .email{
+  font-size: 20px;
+  text-decoration: underline; 
+  color: #00BFFF;
+}
+
+.link .pozMenu{
+  font-size: 20px;
+  text-decoration: none; 
+  color: #800000;
+}
+
+.link .akcja{
+  font-size: 15px;
+  text-decoration: none; 
+  color: #006400;
+}
+
+.przycisk{
+  	margin-top: 10px;
+}
+
+.przycisk .dodaj
+{
+	font-size: 20px;
+}
+
+.uslugi{
+  list-style-type: circle;
+  line-height: 30px;
+}
+
+.menuLista{
+  height:auto; 
+  margin:0;
+  padding:0;
+  list-style: none;
+  float: left;
+  width: 338px;
+}
+
+.menuLista .poz { 
+  float: right;
+  margin-left:10px;
+  margin-right:10px;
+  padding:0;
+}
+
+.naglowek {
+  padding: 15px;
+  font-size: 40px;
+  font-style: italic;
+  font-family: Verdana;
+  text-decoration: underline;
+  text-align: center;	
+  color: #483D8B;
+}
+
+.menu {
+  padding-right: 10px;
+  padding-left: 10px;
+  border-color: #4B0082;
+  border-style: double;
+  border-width: 10px;
+  border-radius: 20px; 
+  position: absolute;
+  text-align: center;
+  left: 35%;
+  top: 2%;
+  height: auto;
+  width: auto;
+  background: #EE82EE; 	
+}
+
+.tresc {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-color: #483D8B;
+  border-style: groove;
+  border-width: 15px;
+  border-radius: 30px;
+  background: #FFB6C1;	
+  position:absolute;
+  left: 5%; 
+  top: 90px;
+  width: 85%;
+  height: auto;
+  opacity: 0.8;
+  box-shadow: 8px 8px 4px 4px #000000;
+}
+
+.pusto {
+  border-style: none;
+  position:absolute;
+  top: 70px;
+  width: 100%;
+  height: auto;
+}

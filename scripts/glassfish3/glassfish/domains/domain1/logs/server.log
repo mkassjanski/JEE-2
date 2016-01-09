@@ -1,0 +1,972 @@
+sty 03, 2016 5:01:38 PM com.sun.enterprise.admin.launcher.GFLauncherLogger info
+INFO: JVM invocation command line:
+-XX:+UnlockDiagnosticVMOptions
+-XX:PermSize=64m
+-XX:MaxPermSize=192m
+-XX:NewRatio=2
+-Xmx512m
+-client
+-javaagent:/home/student/projekt2/tje2/scripts/glassfish3/glassfish/lib/monitor/flashlight-agent.jar
+-Dosgi.shell.telnet.maxconn=1
+-Dfelix.fileinstall.disableConfigSave=false
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-Dfelix.fileinstall.dir=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/modules/autostart/
+-Djavax.net.ssl.keyStore=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1/config/keystore.jks
+-Dosgi.shell.telnet.port=6666
+-Djava.security.policy=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1/config/server.policy
+-Djava.awt.headless=true
+-Dfelix.fileinstall.log.level=2
+-Dfelix.fileinstall.poll=5000
+-Dcom.sun.aas.instanceRoot=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1
+-Dosgi.shell.telnet.ip=127.0.0.1
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Djava.endorsed.dirs=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/modules/endorsed:/home/student/projekt2/tje2/scripts/glassfish3/glassfish/lib/endorsed
+-Dcom.sun.aas.installRoot=/home/student/projekt2/tje2/scripts/glassfish3/glassfish
+-Dfelix.fileinstall.bundles.startTransient=true
+-Djava.ext.dirs=/opt/devel/jdk1.7.0_40/lib/ext:/opt/devel/jdk1.7.0_40/jre/lib/ext:/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1/lib/ext
+-Dfelix.fileinstall.bundles.new.start=true
+-Djavax.net.ssl.trustStore=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1/config/cacerts.jks
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Djava.security.auth.login.config=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1/config/login.conf
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Dgosh.args=--nointeractive
+sty 03, 2016 5:01:38 PM com.sun.enterprise.admin.launcher.GFLauncherLogger info
+INFO: Successfully launched in 6 msec.
+[#|2016-01-03T17:01:43.692+0100|INFO|glassfish3.1.2|com.sun.enterprise.server.logging.GFFileHandler|_ThreadID=1;_ThreadName=Thread-2;|Running GlassFish Version: GlassFish Server Open Source Edition 3.1.2.2 (build 5)|#]
+
+[#|2016-01-03T17:01:43.894+0100|INFO|glassfish3.1.2|org.glassfish.ha.store.spi.BackingStoreFactoryRegistry|_ThreadID=1;_ThreadName=Thread-2;|Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry|#]
+
+[#|2016-01-03T17:01:44.296+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.services.impl|_ThreadID=32;_ThreadName=Thread-2;|Grizzly Framework 1.9.50 started in: 27ms - bound to [0.0.0.0:7676]|#]
+
+[#|2016-01-03T17:01:44.296+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.services.impl|_ThreadID=26;_ThreadName=Thread-2;|Grizzly Framework 1.9.50 started in: 69ms - bound to [0.0.0.0:4848]|#]
+
+[#|2016-01-03T17:01:44.296+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.services.impl|_ThreadID=24;_ThreadName=Thread-2;|Grizzly Framework 1.9.50 started in: 84ms - bound to [0.0.0.0:8181]|#]
+
+[#|2016-01-03T17:01:44.296+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.services.impl|_ThreadID=25;_ThreadName=Thread-2;|Grizzly Framework 1.9.50 started in: 112ms - bound to [0.0.0.0:8080]|#]
+
+[#|2016-01-03T17:01:44.296+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.services.impl|_ThreadID=29;_ThreadName=Thread-2;|Grizzly Framework 1.9.50 started in: 37ms - bound to [0.0.0.0:3700]|#]
+
+[#|2016-01-03T17:01:44.493+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.server|_ThreadID=1;_ThreadName=Thread-2;|GlassFish Server Open Source Edition 3.1.2.2 (5) startup time : Felix (3 963ms), startup services(1 610ms), total(5 573ms)|#]
+
+[#|2016-01-03T17:01:45.921+0100|INFO|glassfish3.1.2|javax.enterprise.system.jmx.org.glassfish.admin.mbeanserver|_ThreadID=41;_ThreadName=Thread-2;|JMX005: JMXStartupService had Started JMXConnector on JMXService URL service:jmx:rmi://virtualbox:8686/jndi/rmi://virtualbox:8686/jmxrmi|#]
+
+[#|2016-01-03T17:03:37.943+0100|INFO|glassfish3.1.2|javax.enterprise.system.tools.admin.com.sun.enterprise.v3.admin|_ThreadID=63;_ThreadName=Thread-2;|Server shutdown initiated|#]
+
+[#|2016-01-03T17:03:40.466+0100|INFO|glassfish3.1.2|javax.enterprise.system.jmx.org.glassfish.admin.mbeanserver|_ThreadID=63;_ThreadName=Thread-2;|JMX002: JMXStartupService: Stopped JMXConnectorServer: null|#]
+
+[#|2016-01-03T17:03:40.469+0100|INFO|glassfish3.1.2|javax.enterprise.system.jmx.org.glassfish.admin.mbeanserver|_ThreadID=63;_ThreadName=Thread-2;|JMX001: JMXStartupService and JMXConnectors have been shut down.|#]
+
+[#|2016-01-03T17:03:40.472+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.server|_ThreadID=63;_ThreadName=Thread-2;|Shutdown procedure finished|#]
+
+sty 03, 2016 5:07:47 PM com.sun.enterprise.admin.launcher.GFLauncherLogger info
+INFO: JVM invocation command line:
+-XX:+UnlockDiagnosticVMOptions
+-XX:PermSize=64m
+-XX:MaxPermSize=192m
+-XX:NewRatio=2
+-Xmx512m
+-client
+-javaagent:/home/student/projekt2/tje2/scripts/glassfish3/glassfish/lib/monitor/flashlight-agent.jar
+-Dosgi.shell.telnet.maxconn=1
+-Dfelix.fileinstall.disableConfigSave=false
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-Dfelix.fileinstall.dir=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/modules/autostart/
+-Djavax.net.ssl.keyStore=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1/config/keystore.jks
+-Dosgi.shell.telnet.port=6666
+-Djava.security.policy=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1/config/server.policy
+-Djava.awt.headless=true
+-Dfelix.fileinstall.log.level=2
+-Dfelix.fileinstall.poll=5000
+-Dcom.sun.aas.instanceRoot=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1
+-Dosgi.shell.telnet.ip=127.0.0.1
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Djava.endorsed.dirs=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/modules/endorsed:/home/student/projekt2/tje2/scripts/glassfish3/glassfish/lib/endorsed
+-Dcom.sun.aas.installRoot=/home/student/projekt2/tje2/scripts/glassfish3/glassfish
+-Dfelix.fileinstall.bundles.startTransient=true
+-Djava.ext.dirs=/opt/devel/jdk1.7.0_40/lib/ext:/opt/devel/jdk1.7.0_40/jre/lib/ext:/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1/lib/ext
+-Dfelix.fileinstall.bundles.new.start=true
+-Djavax.net.ssl.trustStore=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1/config/cacerts.jks
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Djava.security.auth.login.config=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1/config/login.conf
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Dgosh.args=--nointeractive
+sty 03, 2016 5:07:47 PM com.sun.enterprise.admin.launcher.GFLauncherLogger info
+INFO: Successfully launched in 7 msec.
+[#|2016-01-03T17:07:49.235+0100|INFO|glassfish3.1.2|com.sun.enterprise.server.logging.GFFileHandler|_ThreadID=1;_ThreadName=Thread-2;|Running GlassFish Version: GlassFish Server Open Source Edition 3.1.2.2 (build 5)|#]
+
+[#|2016-01-03T17:07:49.314+0100|INFO|glassfish3.1.2|org.glassfish.ha.store.spi.BackingStoreFactoryRegistry|_ThreadID=1;_ThreadName=Thread-2;|Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry|#]
+
+[#|2016-01-03T17:07:49.514+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.services.impl|_ThreadID=22;_ThreadName=Thread-2;|Grizzly Framework 1.9.50 started in: 24ms - bound to [0.0.0.0:4848]|#]
+
+[#|2016-01-03T17:07:49.514+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.services.impl|_ThreadID=25;_ThreadName=Thread-2;|Grizzly Framework 1.9.50 started in: 33ms - bound to [0.0.0.0:8181]|#]
+
+[#|2016-01-03T17:07:49.523+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.services.impl|_ThreadID=24;_ThreadName=Thread-2;|Grizzly Framework 1.9.50 started in: 65ms - bound to [0.0.0.0:8080]|#]
+
+[#|2016-01-03T17:07:49.526+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.services.impl|_ThreadID=29;_ThreadName=Thread-2;|Grizzly Framework 1.9.50 started in: 5ms - bound to [0.0.0.0:7676]|#]
+
+[#|2016-01-03T17:07:49.528+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.services.impl|_ThreadID=31;_ThreadName=Thread-2;|Grizzly Framework 1.9.50 started in: 22ms - bound to [0.0.0.0:3700]|#]
+
+[#|2016-01-03T17:07:49.656+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.server|_ThreadID=1;_ThreadName=Thread-2;|GlassFish Server Open Source Edition 3.1.2.2 (5) startup time : Felix (1 544ms), startup services(600ms), total(2 144ms)|#]
+
+[#|2016-01-03T17:07:50.178+0100|INFO|glassfish3.1.2|javax.enterprise.system.jmx.org.glassfish.admin.mbeanserver|_ThreadID=40;_ThreadName=Thread-2;|JMX005: JMXStartupService had Started JMXConnector on JMXService URL service:jmx:rmi://virtualbox:8686/jndi/rmi://virtualbox:8686/jmxrmi|#]
+
+[#|2016-01-03T17:08:12.382+0100|INFO|glassfish3.1.2|org.hibernate.validator.internal.util.Version|_ThreadID=57;_ThreadName=Thread-2;|HV000001: Hibernate Validator 4.3.0.Final|#]
+
+[#|2016-01-03T17:08:12.567+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.services.impl|_ThreadID=72;_ThreadName=Thread-2;|Grizzly Framework 1.9.50 started in: 3ms - bound to [0.0.0.0:8080]|#]
+
+[#|2016-01-03T17:08:13.557+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.services.impl|_ThreadID=76;_ThreadName=Thread-2;|Grizzly Framework 1.9.50 started in: 2ms - bound to [0.0.0.0:8181]|#]
+
+[#|2016-01-03T17:08:13.710+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.admin.adapter|_ThreadID=78;_ThreadName=Thread-2;|The Admin Console is installing...|#]
+
+[#|2016-01-03T17:08:15.088+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.admin.adapter|_ThreadID=78;_ThreadName=Thread-2;|The Admin Console is already installed, but not yet loaded.|#]
+
+[#|2016-01-03T17:08:15.089+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.admin.adapter|_ThreadID=78;_ThreadName=Thread-2;|The Admin Console is starting. Please wait.|#]
+
+[#|2016-01-03T17:08:15.270+0100|SEVERE|glassfish3.1.2|javax.enterprise.system.ssl.security.com.sun.enterprise.security.ssl.impl|_ThreadID=79;_ThreadName=Thread-2;|SEC5054: Certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  modulus: 23741889829347261660812437366387754385443431973861114865490414153884050331745811968523116847625570146592736935209718565296053386842135985534863157983128812774162998053673746470782252407673402238146869994438729551246768368782318393878374421033907597162218758024581735139682087126982809511479059100617027892880227587855877479432885604404402435662802390484099065871430585284534529627347717530352189612077130606642676951640071336717026459037542552927905851171460589361570392199748753414855675665635003335769915908187224347232807336022456537328962095005323382940080676931822787496212635993279098588863972868266229522169377
+  public exponent: 65537
+  Validity: [From: Fri Aug 14 16:50:00 CEST 1998,
+               To: Thu Aug 15 01:59:00 CEST 2013]
+  Issuer: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  SerialNumber: [    01b6]
+
+Certificate Extensions: 4
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:5
+]
+
+[2]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [1.2.840.113763.1.2.1.3]
+[]  ]
+]
+
+[3]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[4]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 76 0A 49 21 38 4C 9F DE   F8 C4 49 C7 71 71 91 9D  v.I!8L....I.qq..
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 41 3A D4 18 5B DA B8 DE   21 1C E1 8E 09 E5 F1 68  A:..[...!......h
+0010: 34 FF DE 96 F4 07 F5 A7   3C F3 AC 4A B1 9B FA 92  4.......<..J....
+0020: FA 9B ED E6 32 21 AA 4A   76 C5 DC 4F 38 E5 DF D5  ....2!.Jv..O8...
+0030: 86 E4 D5 C8 76 7D 98 D7   B1 CD 8F 4D B5 91 23 6C  ....v......M..#l
+0040: 8B 8A EB EA 7C EF 14 94   C4 C6 F0 1F 4A 2D 32 71  ............J-2q
+0050: 63 2B 63 91 26 02 09 B6   80 1D ED E2 CC B8 7F DB  c+c.&...........
+0060: 87 63 C8 E1 D0 6C 26 B1   35 1D 40 66 10 1B CD 95  .c...l&.5.@f....
+0070: 54 18 33 61 EC 13 4F DA   13 F7 99 AF 3E D0 CF 8E  T.3a..O.....>...
+0080: A6 72 A2 B3 C3 05 9A C9   27 7D 92 CC 7E 52 8D B3  .r......'....R..
+0090: AB 70 6D 9E 89 9F 4D EB   1A 75 C2 98 AA D5 02 16  .pm...M..u......
+00A0: D7 0C 8A BF 25 E4 EB 2D   BC 98 E9 58 38 19 7C B9  ....%..-...X8...
+00B0: 37 FE DB E2 99 08 73 06   C7 97 83 6A 7D 10 01 2F  7.....s....j.../
+00C0: 32 B9 17 05 4A 65 E6 2F   CE BE 5E 53 A6 82 E9 9A  2...Je./..^S....
+00D0: 53 0A 84 74 2D 83 CA C8   94 16 76 5F 94 61 28 F0  S..t-.....v_.a(.
+00E0: 85 A7 39 BB D7 8B D9 A8   B2 13 1D 54 09 34 24 7D  ..9........T.4$.
+00F0: 20 81 7D 66 7E A2 90 74   5C 10 C6 BD EC AB 1B C2   ..f...t\.......
+
+]|#]
+
+[#|2016-01-03T17:08:16.027+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.ejb.com.sun.ejb.containers|_ThreadID=79;_ThreadName=Thread-2;|Created EjbThreadPoolExecutor with thread-core-pool-size 16 thread-max-pool-size 32 thread-keep-alive-seconds 60 thread-queue-capacity 2147483647 allow-core-thread-timeout false |#]
+
+[#|2016-01-03T17:08:16.687+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.web.com.sun.enterprise.web|_ThreadID=78;_ThreadName=Thread-2;|WEB0169: Created HTTP listener [http-listener-1] on host/port [0.0.0.0:8080]|#]
+
+[#|2016-01-03T17:08:16.697+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.web.com.sun.enterprise.web|_ThreadID=78;_ThreadName=Thread-2;|WEB0169: Created HTTP listener [http-listener-2] on host/port [0.0.0.0:8181]|#]
+
+[#|2016-01-03T17:08:16.699+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.web.com.sun.enterprise.web|_ThreadID=78;_ThreadName=Thread-2;|WEB0169: Created HTTP listener [admin-listener] on host/port [0.0.0.0:4848]|#]
+
+[#|2016-01-03T17:08:16.770+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.web.com.sun.enterprise.web|_ThreadID=78;_ThreadName=Thread-2;|WEB0171: Created virtual server [server]|#]
+
+[#|2016-01-03T17:08:16.772+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.web.com.sun.enterprise.web|_ThreadID=78;_ThreadName=Thread-2;|WEB0171: Created virtual server [__asadmin]|#]
+
+[#|2016-01-03T17:08:17.558+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.web.com.sun.enterprise.web|_ThreadID=78;_ThreadName=Thread-2;|WEB0172: Virtual server [server] loaded default web module []|#]
+
+[#|2016-01-03T17:08:18.168+0100|INFO|glassfish3.1.2|com.sun.jersey.server.impl.application.WebApplicationImpl|_ThreadID=79;_ThreadName=Thread-2;|Initiating Jersey application, version 'Jersey: 1.11.1 03/31/2012 06:49 PM'|#]
+
+[#|2016-01-03T17:08:18.611+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.security.com.sun.enterprise.security|_ThreadID=78;_ThreadName=Thread-2;|SEC1002: Security Manager is OFF.|#]
+
+[#|2016-01-03T17:08:18.634+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.security.com.sun.enterprise.security|_ThreadID=78;_ThreadName=Thread-2;|SEC1010: Entering Security Startup Service|#]
+
+[#|2016-01-03T17:08:18.664+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.security.com.sun.enterprise.security|_ThreadID=78;_ThreadName=Thread-2;|SEC1143: Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.|#]
+
+[#|2016-01-03T17:08:18.886+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.security.com.sun.enterprise.security.auth.realm|_ThreadID=78;_ThreadName=Thread-2;|SEC1115: Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.|#]
+
+[#|2016-01-03T17:08:18.921+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.security.com.sun.enterprise.security.auth.realm|_ThreadID=78;_ThreadName=Thread-2;|SEC1115: Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.|#]
+
+[#|2016-01-03T17:08:18.960+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.security.com.sun.enterprise.security.auth.realm|_ThreadID=78;_ThreadName=Thread-2;|SEC1115: Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.|#]
+
+[#|2016-01-03T17:08:18.989+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.security.com.sun.enterprise.security|_ThreadID=78;_ThreadName=Thread-2;|SEC1011: Security Service(s) Started Successfully|#]
+
+[#|2016-01-03T17:08:20.343+0100|INFO|glassfish3.1.2|javax.enterprise.system.tools.admin.org.glassfish.admin.rest.adapter|_ThreadID=79;_ThreadName=Thread-2;|REST00001: Listening to REST requests at context: /management/domain|#]
+
+[#|2016-01-03T17:08:21.057+0100|INFO|glassfish3.1.2|javax.enterprise.resource.webcontainer.jsf.config|_ThreadID=78;_ThreadName=Thread-2;|Initializing Mojarra 2.1.6 (SNAPSHOT 20111206) for context ''|#]
+
+[#|2016-01-03T17:08:22.477+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.web.com.sun.enterprise.web|_ThreadID=78;_ThreadName=Thread-2;|WEB0671: Loading application [__admingui] at [/]|#]
+
+[#|2016-01-03T17:08:22.479+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.server|_ThreadID=78;_ThreadName=Thread-2;|CORE10010: Loading application __admingui done in 7 390 ms|#]
+
+[#|2016-01-03T17:08:22.479+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.admin.adapter|_ThreadID=78;_ThreadName=Thread-2;|The Admin Console application is loaded.|#]
+
+[#|2016-01-03T17:08:23.197+0100|SEVERE|glassfish3.1.2|javax.enterprise.system.ssl.security.com.sun.enterprise.security.ssl.impl|_ThreadID=82;_ThreadName=Thread-2;|SEC5054: Certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  modulus: 23741889829347261660812437366387754385443431973861114865490414153884050331745811968523116847625570146592736935209718565296053386842135985534863157983128812774162998053673746470782252407673402238146869994438729551246768368782318393878374421033907597162218758024581735139682087126982809511479059100617027892880227587855877479432885604404402435662802390484099065871430585284534529627347717530352189612077130606642676951640071336717026459037542552927905851171460589361570392199748753414855675665635003335769915908187224347232807336022456537328962095005323382940080676931822787496212635993279098588863972868266229522169377
+  public exponent: 65537
+  Validity: [From: Fri Aug 14 16:50:00 CEST 1998,
+               To: Thu Aug 15 01:59:00 CEST 2013]
+  Issuer: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  SerialNumber: [    01b6]
+
+Certificate Extensions: 4
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:5
+]
+
+[2]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [1.2.840.113763.1.2.1.3]
+[]  ]
+]
+
+[3]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[4]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 76 0A 49 21 38 4C 9F DE   F8 C4 49 C7 71 71 91 9D  v.I!8L....I.qq..
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 41 3A D4 18 5B DA B8 DE   21 1C E1 8E 09 E5 F1 68  A:..[...!......h
+0010: 34 FF DE 96 F4 07 F5 A7   3C F3 AC 4A B1 9B FA 92  4.......<..J....
+0020: FA 9B ED E6 32 21 AA 4A   76 C5 DC 4F 38 E5 DF D5  ....2!.Jv..O8...
+0030: 86 E4 D5 C8 76 7D 98 D7   B1 CD 8F 4D B5 91 23 6C  ....v......M..#l
+0040: 8B 8A EB EA 7C EF 14 94   C4 C6 F0 1F 4A 2D 32 71  ............J-2q
+0050: 63 2B 63 91 26 02 09 B6   80 1D ED E2 CC B8 7F DB  c+c.&...........
+0060: 87 63 C8 E1 D0 6C 26 B1   35 1D 40 66 10 1B CD 95  .c...l&.5.@f....
+0070: 54 18 33 61 EC 13 4F DA   13 F7 99 AF 3E D0 CF 8E  T.3a..O.....>...
+0080: A6 72 A2 B3 C3 05 9A C9   27 7D 92 CC 7E 52 8D B3  .r......'....R..
+0090: AB 70 6D 9E 89 9F 4D EB   1A 75 C2 98 AA D5 02 16  .pm...M..u......
+00A0: D7 0C 8A BF 25 E4 EB 2D   BC 98 E9 58 38 19 7C B9  ....%..-...X8...
+00B0: 37 FE DB E2 99 08 73 06   C7 97 83 6A 7D 10 01 2F  7.....s....j.../
+00C0: 32 B9 17 05 4A 65 E6 2F   CE BE 5E 53 A6 82 E9 9A  2...Je./..^S....
+00D0: 53 0A 84 74 2D 83 CA C8   94 16 76 5F 94 61 28 F0  S..t-.....v_.a(.
+00E0: 85 A7 39 BB D7 8B D9 A8   B2 13 1D 54 09 34 24 7D  ..9........T.4$.
+00F0: 20 81 7D 66 7E A2 90 74   5C 10 C6 BD EC AB 1B C2   ..f...t\.......
+
+]|#]
+
+[#|2016-01-03T17:08:24.855+0100|SEVERE|glassfish3.1.2|javax.enterprise.system.ssl.security.com.sun.enterprise.security.ssl.impl|_ThreadID=57;_ThreadName=Thread-2;|SEC5054: Certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  modulus: 23741889829347261660812437366387754385443431973861114865490414153884050331745811968523116847625570146592736935209718565296053386842135985534863157983128812774162998053673746470782252407673402238146869994438729551246768368782318393878374421033907597162218758024581735139682087126982809511479059100617027892880227587855877479432885604404402435662802390484099065871430585284534529627347717530352189612077130606642676951640071336717026459037542552927905851171460589361570392199748753414855675665635003335769915908187224347232807336022456537328962095005323382940080676931822787496212635993279098588863972868266229522169377
+  public exponent: 65537
+  Validity: [From: Fri Aug 14 16:50:00 CEST 1998,
+               To: Thu Aug 15 01:59:00 CEST 2013]
+  Issuer: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  SerialNumber: [    01b6]
+
+Certificate Extensions: 4
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:5
+]
+
+[2]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [1.2.840.113763.1.2.1.3]
+[]  ]
+]
+
+[3]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[4]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 76 0A 49 21 38 4C 9F DE   F8 C4 49 C7 71 71 91 9D  v.I!8L....I.qq..
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 41 3A D4 18 5B DA B8 DE   21 1C E1 8E 09 E5 F1 68  A:..[...!......h
+0010: 34 FF DE 96 F4 07 F5 A7   3C F3 AC 4A B1 9B FA 92  4.......<..J....
+0020: FA 9B ED E6 32 21 AA 4A   76 C5 DC 4F 38 E5 DF D5  ....2!.Jv..O8...
+0030: 86 E4 D5 C8 76 7D 98 D7   B1 CD 8F 4D B5 91 23 6C  ....v......M..#l
+0040: 8B 8A EB EA 7C EF 14 94   C4 C6 F0 1F 4A 2D 32 71  ............J-2q
+0050: 63 2B 63 91 26 02 09 B6   80 1D ED E2 CC B8 7F DB  c+c.&...........
+0060: 87 63 C8 E1 D0 6C 26 B1   35 1D 40 66 10 1B CD 95  .c...l&.5.@f....
+0070: 54 18 33 61 EC 13 4F DA   13 F7 99 AF 3E D0 CF 8E  T.3a..O.....>...
+0080: A6 72 A2 B3 C3 05 9A C9   27 7D 92 CC 7E 52 8D B3  .r......'....R..
+0090: AB 70 6D 9E 89 9F 4D EB   1A 75 C2 98 AA D5 02 16  .pm...M..u......
+00A0: D7 0C 8A BF 25 E4 EB 2D   BC 98 E9 58 38 19 7C B9  ....%..-...X8...
+00B0: 37 FE DB E2 99 08 73 06   C7 97 83 6A 7D 10 01 2F  7.....s....j.../
+00C0: 32 B9 17 05 4A 65 E6 2F   CE BE 5E 53 A6 82 E9 9A  2...Je./..^S....
+00D0: 53 0A 84 74 2D 83 CA C8   94 16 76 5F 94 61 28 F0  S..t-.....v_.a(.
+00E0: 85 A7 39 BB D7 8B D9 A8   B2 13 1D 54 09 34 24 7D  ..9........T.4$.
+00F0: 20 81 7D 66 7E A2 90 74   5C 10 C6 BD EC AB 1B C2   ..f...t\.......
+
+]|#]
+
+[#|2016-01-03T17:08:24.859+0100|WARNING|glassfish3.1.2|org.apache.catalina.connector.Request|_ThreadID=57;_ThreadName=Thread-2;|PWC4011: Unable to set request character encoding to UTF-8 from context , because request parameters have already been read, or ServletRequest.getReader() has already been called|#]
+
+[#|2016-01-03T17:08:25.348+0100|SEVERE|glassfish3.1.2|javax.enterprise.system.ssl.security.com.sun.enterprise.security.ssl.impl|_ThreadID=79;_ThreadName=Thread-2;|SEC5054: Certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  modulus: 23741889829347261660812437366387754385443431973861114865490414153884050331745811968523116847625570146592736935209718565296053386842135985534863157983128812774162998053673746470782252407673402238146869994438729551246768368782318393878374421033907597162218758024581735139682087126982809511479059100617027892880227587855877479432885604404402435662802390484099065871430585284534529627347717530352189612077130606642676951640071336717026459037542552927905851171460589361570392199748753414855675665635003335769915908187224347232807336022456537328962095005323382940080676931822787496212635993279098588863972868266229522169377
+  public exponent: 65537
+  Validity: [From: Fri Aug 14 16:50:00 CEST 1998,
+               To: Thu Aug 15 01:59:00 CEST 2013]
+  Issuer: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  SerialNumber: [    01b6]
+
+Certificate Extensions: 4
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:5
+]
+
+[2]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [1.2.840.113763.1.2.1.3]
+[]  ]
+]
+
+[3]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[4]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 76 0A 49 21 38 4C 9F DE   F8 C4 49 C7 71 71 91 9D  v.I!8L....I.qq..
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 41 3A D4 18 5B DA B8 DE   21 1C E1 8E 09 E5 F1 68  A:..[...!......h
+0010: 34 FF DE 96 F4 07 F5 A7   3C F3 AC 4A B1 9B FA 92  4.......<..J....
+0020: FA 9B ED E6 32 21 AA 4A   76 C5 DC 4F 38 E5 DF D5  ....2!.Jv..O8...
+0030: 86 E4 D5 C8 76 7D 98 D7   B1 CD 8F 4D B5 91 23 6C  ....v......M..#l
+0040: 8B 8A EB EA 7C EF 14 94   C4 C6 F0 1F 4A 2D 32 71  ............J-2q
+0050: 63 2B 63 91 26 02 09 B6   80 1D ED E2 CC B8 7F DB  c+c.&...........
+0060: 87 63 C8 E1 D0 6C 26 B1   35 1D 40 66 10 1B CD 95  .c...l&.5.@f....
+0070: 54 18 33 61 EC 13 4F DA   13 F7 99 AF 3E D0 CF 8E  T.3a..O.....>...
+0080: A6 72 A2 B3 C3 05 9A C9   27 7D 92 CC 7E 52 8D B3  .r......'....R..
+0090: AB 70 6D 9E 89 9F 4D EB   1A 75 C2 98 AA D5 02 16  .pm...M..u......
+00A0: D7 0C 8A BF 25 E4 EB 2D   BC 98 E9 58 38 19 7C B9  ....%..-...X8...
+00B0: 37 FE DB E2 99 08 73 06   C7 97 83 6A 7D 10 01 2F  7.....s....j.../
+00C0: 32 B9 17 05 4A 65 E6 2F   CE BE 5E 53 A6 82 E9 9A  2...Je./..^S....
+00D0: 53 0A 84 74 2D 83 CA C8   94 16 76 5F 94 61 28 F0  S..t-.....v_.a(.
+00E0: 85 A7 39 BB D7 8B D9 A8   B2 13 1D 54 09 34 24 7D  ..9........T.4$.
+00F0: 20 81 7D 66 7E A2 90 74   5C 10 C6 BD EC AB 1B C2   ..f...t\.......
+
+]|#]
+
+[#|2016-01-03T17:08:25.365+0100|INFO|glassfish3.1.2|org.glassfish.admingui|_ThreadID=79;_ThreadName=Thread-2;|Redirecting to /|#]
+
+[#|2016-01-03T17:08:25.604+0100|INFO|glassfish3.1.2|org.glassfish.admingui|_ThreadID=82;_ThreadName=Thread-2;|Admin Console: Initializing Session Attributes...|#]
+
+[#|2016-01-03T17:09:50.228+0100|INFO|glassfish3.1.2|null|_ThreadID=39;_ThreadName=Thread-2;|Domain Pinged: stable.glassfish.org|#]
+
+[#|2016-01-03T17:12:07.956+0100|INFO|glassfish3.1.2|javax.enterprise.system.tools.admin.com.sun.enterprise.v3.admin|_ThreadID=119;_ThreadName=Thread-2;|Server restart initiated|#]
+
+[#|2016-01-03T17:12:08.005+0100|WARNING|glassfish3.1.2|javax.enterprise.system.tools.admin.com.sun.enterprise.v3.admin|_ThreadID=119;_ThreadName=Thread-2;|There should be only 1 primordial module but 0 primordial modules were found.|#]
+
+sty 03, 2016 5:12:08 PM com.sun.enterprise.admin.launcher.GFLauncherLogger info
+INFO: JVM invocation command line:
+-XX:+UnlockDiagnosticVMOptions
+-XX:PermSize=64m
+-XX:MaxPermSize=192m
+-XX:NewRatio=2
+-Xmx512m
+-client
+-javaagent:/home/student/projekt2/tje2/scripts/glassfish3/glassfish/lib/monitor/flashlight-agent.jar
+-Dosgi.shell.telnet.maxconn=1
+-Dfelix.fileinstall.disableConfigSave=false
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-Dfelix.fileinstall.dir=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/modules/autostart/
+-Djavax.net.ssl.keyStore=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1/config/keystore.jks
+-Dosgi.shell.telnet.port=6666
+-Djava.security.policy=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1/config/server.policy
+-Djava.awt.headless=true
+-Dfelix.fileinstall.log.level=2
+-Dfelix.fileinstall.poll=5000
+-Dcom.sun.aas.instanceRoot=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1
+-Dosgi.shell.telnet.ip=127.0.0.1
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Djava.endorsed.dirs=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/modules/endorsed:/home/student/projekt2/tje2/scripts/glassfish3/glassfish/lib/endorsed
+-Dcom.sun.aas.installRoot=/home/student/projekt2/tje2/scripts/glassfish3/glassfish
+-Dfelix.fileinstall.bundles.startTransient=true
+-Djava.ext.dirs=/opt/devel/jdk1.7.0_40/lib/ext:/opt/devel/jdk1.7.0_40/jre/lib/ext:/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1/lib/ext
+-Dfelix.fileinstall.bundles.new.start=true
+-Djavax.net.ssl.trustStore=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1/config/cacerts.jks
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Djava.security.auth.login.config=/home/student/projekt2/tje2/scripts/glassfish3/glassfish/domains/domain1/config/login.conf
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Dgosh.args=--nointeractive
+sty 03, 2016 5:12:10 PM com.sun.enterprise.admin.launcher.GFLauncherLogger info
+INFO: Successfully launched in 2 msec.
+[#|2016-01-03T17:12:17.513+0100|INFO|glassfish3.1.2|com.sun.enterprise.server.logging.GFFileHandler|_ThreadID=1;_ThreadName=Thread-2;|Running GlassFish Version: GlassFish Server Open Source Edition 3.1.2.2 (build 5)|#]
+
+[#|2016-01-03T17:12:17.620+0100|INFO|glassfish3.1.2|org.glassfish.ha.store.spi.BackingStoreFactoryRegistry|_ThreadID=1;_ThreadName=Thread-2;|Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry|#]
+
+[#|2016-01-03T17:12:17.974+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.services.impl|_ThreadID=23;_ThreadName=Thread-2;|Grizzly Framework 1.9.50 started in: 51ms - bound to [0.0.0.0:4848]|#]
+
+[#|2016-01-03T17:12:17.974+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.services.impl|_ThreadID=29;_ThreadName=Thread-2;|Grizzly Framework 1.9.50 started in: 34ms - bound to [0.0.0.0:3700]|#]
+
+[#|2016-01-03T17:12:17.975+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.services.impl|_ThreadID=24;_ThreadName=Thread-2;|Grizzly Framework 1.9.50 started in: 74ms - bound to [0.0.0.0:8181]|#]
+
+[#|2016-01-03T17:12:17.975+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.services.impl|_ThreadID=26;_ThreadName=Thread-2;|Grizzly Framework 1.9.50 started in: 96ms - bound to [0.0.0.0:8080]|#]
+
+[#|2016-01-03T17:12:17.979+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.services.impl|_ThreadID=31;_ThreadName=Thread-2;|Grizzly Framework 1.9.50 started in: 27ms - bound to [0.0.0.0:7676]|#]
+
+[#|2016-01-03T17:12:18.115+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.admin.adapter|_ThreadID=1;_ThreadName=Thread-2;|The Admin Console is already installed, but not yet loaded.|#]
+
+[#|2016-01-03T17:12:18.227+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.server|_ThreadID=1;_ThreadName=Thread-2;|GlassFish Server Open Source Edition 3.1.2.2 (5) startup time : Felix (6 183ms), startup services(1 238ms), total(7 421ms)|#]
+
+[#|2016-01-03T17:12:19.437+0100|SEVERE|glassfish3.1.2|javax.enterprise.system.ssl.security.com.sun.enterprise.security.ssl.impl|_ThreadID=47;_ThreadName=Thread-2;|SEC5054: Certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  modulus: 23741889829347261660812437366387754385443431973861114865490414153884050331745811968523116847625570146592736935209718565296053386842135985534863157983128812774162998053673746470782252407673402238146869994438729551246768368782318393878374421033907597162218758024581735139682087126982809511479059100617027892880227587855877479432885604404402435662802390484099065871430585284534529627347717530352189612077130606642676951640071336717026459037542552927905851171460589361570392199748753414855675665635003335769915908187224347232807336022456537328962095005323382940080676931822787496212635993279098588863972868266229522169377
+  public exponent: 65537
+  Validity: [From: Fri Aug 14 16:50:00 CEST 1998,
+               To: Thu Aug 15 01:59:00 CEST 2013]
+  Issuer: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  SerialNumber: [    01b6]
+
+Certificate Extensions: 4
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:5
+]
+
+[2]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [1.2.840.113763.1.2.1.3]
+[]  ]
+]
+
+[3]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[4]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 76 0A 49 21 38 4C 9F DE   F8 C4 49 C7 71 71 91 9D  v.I!8L....I.qq..
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 41 3A D4 18 5B DA B8 DE   21 1C E1 8E 09 E5 F1 68  A:..[...!......h
+0010: 34 FF DE 96 F4 07 F5 A7   3C F3 AC 4A B1 9B FA 92  4.......<..J....
+0020: FA 9B ED E6 32 21 AA 4A   76 C5 DC 4F 38 E5 DF D5  ....2!.Jv..O8...
+0030: 86 E4 D5 C8 76 7D 98 D7   B1 CD 8F 4D B5 91 23 6C  ....v......M..#l
+0040: 8B 8A EB EA 7C EF 14 94   C4 C6 F0 1F 4A 2D 32 71  ............J-2q
+0050: 63 2B 63 91 26 02 09 B6   80 1D ED E2 CC B8 7F DB  c+c.&...........
+0060: 87 63 C8 E1 D0 6C 26 B1   35 1D 40 66 10 1B CD 95  .c...l&.5.@f....
+0070: 54 18 33 61 EC 13 4F DA   13 F7 99 AF 3E D0 CF 8E  T.3a..O.....>...
+0080: A6 72 A2 B3 C3 05 9A C9   27 7D 92 CC 7E 52 8D B3  .r......'....R..
+0090: AB 70 6D 9E 89 9F 4D EB   1A 75 C2 98 AA D5 02 16  .pm...M..u......
+00A0: D7 0C 8A BF 25 E4 EB 2D   BC 98 E9 58 38 19 7C B9  ....%..-...X8...
+00B0: 37 FE DB E2 99 08 73 06   C7 97 83 6A 7D 10 01 2F  7.....s....j.../
+00C0: 32 B9 17 05 4A 65 E6 2F   CE BE 5E 53 A6 82 E9 9A  2...Je./..^S....
+00D0: 53 0A 84 74 2D 83 CA C8   94 16 76 5F 94 61 28 F0  S..t-.....v_.a(.
+00E0: 85 A7 39 BB D7 8B D9 A8   B2 13 1D 54 09 34 24 7D  ..9........T.4$.
+00F0: 20 81 7D 66 7E A2 90 74   5C 10 C6 BD EC AB 1B C2   ..f...t\.......
+
+]|#]
+
+[#|2016-01-03T17:12:19.743+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.ejb.com.sun.ejb.containers|_ThreadID=47;_ThreadName=Thread-2;|Created EjbThreadPoolExecutor with thread-core-pool-size 16 thread-max-pool-size 32 thread-keep-alive-seconds 60 thread-queue-capacity 2147483647 allow-core-thread-timeout false |#]
+
+[#|2016-01-03T17:12:20.839+0100|INFO|glassfish3.1.2|com.sun.jersey.server.impl.application.WebApplicationImpl|_ThreadID=47;_ThreadName=Thread-2;|Initiating Jersey application, version 'Jersey: 1.11.1 03/31/2012 06:49 PM'|#]
+
+[#|2016-01-03T17:12:21.627+0100|INFO|glassfish3.1.2|javax.enterprise.system.tools.admin.org.glassfish.admin.rest.adapter|_ThreadID=47;_ThreadName=Thread-2;|REST00001: Listening to REST requests at context: /management/domain|#]
+
+[#|2016-01-03T17:12:21.676+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.admin.adapter|_ThreadID=50;_ThreadName=Thread-2;|The Admin Console is already installed, but not yet loaded.|#]
+
+[#|2016-01-03T17:12:21.677+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.admin.adapter|_ThreadID=50;_ThreadName=Thread-2;|The Admin Console is starting. Please wait.|#]
+
+[#|2016-01-03T17:12:22.534+0100|INFO|glassfish3.1.2|javax.enterprise.system.jmx.org.glassfish.admin.mbeanserver|_ThreadID=53;_ThreadName=Thread-2;|JMX005: JMXStartupService had Started JMXConnector on JMXService URL service:jmx:rmi://virtualbox:8686/jndi/rmi://virtualbox:8686/jmxrmi|#]
+
+[#|2016-01-03T17:12:23.059+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.web.com.sun.enterprise.web|_ThreadID=50;_ThreadName=Thread-2;|WEB0169: Created HTTP listener [http-listener-1] on host/port [0.0.0.0:8080]|#]
+
+[#|2016-01-03T17:12:23.063+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.web.com.sun.enterprise.web|_ThreadID=50;_ThreadName=Thread-2;|WEB0169: Created HTTP listener [http-listener-2] on host/port [0.0.0.0:8181]|#]
+
+[#|2016-01-03T17:12:23.065+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.web.com.sun.enterprise.web|_ThreadID=50;_ThreadName=Thread-2;|WEB0169: Created HTTP listener [admin-listener] on host/port [0.0.0.0:4848]|#]
+
+[#|2016-01-03T17:12:23.082+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.web.com.sun.enterprise.web|_ThreadID=50;_ThreadName=Thread-2;|WEB0171: Created virtual server [server]|#]
+
+[#|2016-01-03T17:12:23.084+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.web.com.sun.enterprise.web|_ThreadID=50;_ThreadName=Thread-2;|WEB0171: Created virtual server [__asadmin]|#]
+
+[#|2016-01-03T17:12:23.380+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.web.com.sun.enterprise.web|_ThreadID=50;_ThreadName=Thread-2;|WEB0172: Virtual server [server] loaded default web module []|#]
+
+[#|2016-01-03T17:12:23.753+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.security.com.sun.enterprise.security|_ThreadID=50;_ThreadName=Thread-2;|SEC1002: Security Manager is OFF.|#]
+
+[#|2016-01-03T17:12:23.762+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.security.com.sun.enterprise.security|_ThreadID=50;_ThreadName=Thread-2;|SEC1010: Entering Security Startup Service|#]
+
+[#|2016-01-03T17:12:23.766+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.security.com.sun.enterprise.security|_ThreadID=50;_ThreadName=Thread-2;|SEC1143: Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.|#]
+
+[#|2016-01-03T17:12:23.917+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.security.com.sun.enterprise.security.auth.realm|_ThreadID=50;_ThreadName=Thread-2;|SEC1115: Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.|#]
+
+[#|2016-01-03T17:12:23.924+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.security.com.sun.enterprise.security.auth.realm|_ThreadID=50;_ThreadName=Thread-2;|SEC1115: Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.|#]
+
+[#|2016-01-03T17:12:23.937+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.security.com.sun.enterprise.security.auth.realm|_ThreadID=50;_ThreadName=Thread-2;|SEC1115: Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.|#]
+
+[#|2016-01-03T17:12:23.950+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.security.com.sun.enterprise.security|_ThreadID=50;_ThreadName=Thread-2;|SEC1011: Security Service(s) Started Successfully|#]
+
+[#|2016-01-03T17:12:25.202+0100|INFO|glassfish3.1.2|javax.enterprise.resource.webcontainer.jsf.config|_ThreadID=50;_ThreadName=Thread-2;|Initializing Mojarra 2.1.6 (SNAPSHOT 20111206) for context ''|#]
+
+[#|2016-01-03T17:12:26.206+0100|INFO|glassfish3.1.2|org.hibernate.validator.internal.util.Version|_ThreadID=50;_ThreadName=Thread-2;|HV000001: Hibernate Validator 4.3.0.Final|#]
+
+[#|2016-01-03T17:12:26.739+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.web.com.sun.enterprise.web|_ThreadID=50;_ThreadName=Thread-2;|WEB0671: Loading application [__admingui] at [/]|#]
+
+[#|2016-01-03T17:12:26.740+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.server|_ThreadID=50;_ThreadName=Thread-2;|CORE10010: Loading application __admingui done in 5 062 ms|#]
+
+[#|2016-01-03T17:12:26.742+0100|INFO|glassfish3.1.2|javax.enterprise.system.core.com.sun.enterprise.v3.admin.adapter|_ThreadID=50;_ThreadName=Thread-2;|The Admin Console application is loaded.|#]
+
+[#|2016-01-03T17:13:34.990+0100|INFO|glassfish3.1.2|org.hibernate.cfg.annotations.Version|_ThreadID=74;_ThreadName=Thread-2;|Hibernate Annotations 3.5.0-Final|#]
+
+[#|2016-01-03T17:13:35.036+0100|INFO|glassfish3.1.2|org.hibernate.cfg.Environment|_ThreadID=74;_ThreadName=Thread-2;|Hibernate 3.5.0-Final|#]
+
+[#|2016-01-03T17:13:35.039+0100|INFO|glassfish3.1.2|org.hibernate.cfg.Environment|_ThreadID=74;_ThreadName=Thread-2;|hibernate.properties not found|#]
+
+[#|2016-01-03T17:13:35.042+0100|INFO|glassfish3.1.2|org.hibernate.cfg.Environment|_ThreadID=74;_ThreadName=Thread-2;|Bytecode provider name : javassist|#]
+
+[#|2016-01-03T17:13:35.062+0100|INFO|glassfish3.1.2|org.hibernate.cfg.Environment|_ThreadID=74;_ThreadName=Thread-2;|using JDK 1.4 java.sql.Timestamp handling|#]
+
+[#|2016-01-03T17:13:35.175+0100|INFO|glassfish3.1.2|org.hibernate.annotations.common.Version|_ThreadID=74;_ThreadName=Thread-2;|Hibernate Commons Annotations 3.2.0.Final|#]
+
+[#|2016-01-03T17:13:35.182+0100|INFO|glassfish3.1.2|org.hibernate.ejb.Version|_ThreadID=74;_ThreadName=Thread-2;|Hibernate EntityManager 3.5.0-Final|#]
+
+[#|2016-01-03T17:13:35.201+0100|INFO|glassfish3.1.2|org.hibernate.ejb.Ejb3Configuration|_ThreadID=74;_ThreadName=Thread-2;|Processing PersistenceUnitInfo [
+	name: demoPU
+	...]|#]
+
+[#|2016-01-03T17:13:35.325+0100|WARNING|glassfish3.1.2|org.hibernate.ejb.Ejb3Configuration|_ThreadID=74;_ThreadName=Thread-2;|Defining hibernate.transaction.flush_before_completion=true ignored in HEM|#]
+
+[#|2016-01-03T17:13:35.364+0100|INFO|glassfish3.1.2|org.hibernate.cfg.AnnotationBinder|_ThreadID=74;_ThreadName=Thread-2;|Binding entity from annotated class: com.zakladPogrzebowy.domena.Pogrzeb|#]
+
+[#|2016-01-03T17:13:35.372+0100|INFO|glassfish3.1.2|org.hibernate.cfg.annotations.QueryBinder|_ThreadID=74;_ThreadName=Thread-2;|Binding Named query: pogrzeb.wszystkie => Select p from Pogrzeb p|#]
+
+[#|2016-01-03T17:13:35.395+0100|INFO|glassfish3.1.2|org.hibernate.cfg.annotations.EntityBinder|_ThreadID=74;_ThreadName=Thread-2;|Bind entity com.zakladPogrzebowy.domena.Pogrzeb on table Pogrzeb|#]
+
+[#|2016-01-03T17:13:35.445+0100|INFO|glassfish3.1.2|org.hibernate.cfg.AnnotationBinder|_ThreadID=74;_ThreadName=Thread-2;|Binding entity from annotated class: com.zakladPogrzebowy.domena.Trumna|#]
+
+[#|2016-01-03T17:13:35.445+0100|INFO|glassfish3.1.2|org.hibernate.cfg.annotations.QueryBinder|_ThreadID=74;_ThreadName=Thread-2;|Binding Named query: trumna.wszystkie => Select t from Trumna t|#]
+
+[#|2016-01-03T17:13:35.446+0100|INFO|glassfish3.1.2|org.hibernate.cfg.annotations.QueryBinder|_ThreadID=74;_ThreadName=Thread-2;|Binding Named query: trumna.dostepne => Select t from Trumna t where t.ilosc <> 0|#]
+
+[#|2016-01-03T17:13:35.446+0100|INFO|glassfish3.1.2|org.hibernate.cfg.annotations.EntityBinder|_ThreadID=74;_ThreadName=Thread-2;|Bind entity com.zakladPogrzebowy.domena.Trumna on table Trumna|#]
+
+[#|2016-01-03T17:13:35.518+0100|INFO|glassfish3.1.2|org.hibernate.cfg.annotations.CollectionBinder|_ThreadID=74;_ThreadName=Thread-2;|Mapping collection: com.zakladPogrzebowy.domena.Trumna.pogrzeby -> Pogrzeb|#]
+
+[#|2016-01-03T17:13:35.520+0100|INFO|glassfish3.1.2|org.hibernate.cfg.AnnotationConfiguration|_ThreadID=74;_ThreadName=Thread-2;|Hibernate Validator not found: ignoring|#]
+
+[#|2016-01-03T17:13:35.634+0100|INFO|glassfish3.1.2|org.hibernate.cfg.search.HibernateSearchEventListenerRegister|_ThreadID=74;_ThreadName=Thread-2;|Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.|#]
+
+[#|2016-01-03T17:13:35.655+0100|INFO|glassfish3.1.2|org.hibernate.connection.ConnectionProviderFactory|_ThreadID=74;_ThreadName=Thread-2;|Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider|#]
+
+[#|2016-01-03T17:13:35.675+0100|INFO|glassfish3.1.2|org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider|_ThreadID=74;_ThreadName=Thread-2;|Using provided datasource|#]
+
+[#|2016-01-03T17:13:36.551+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|RDBMS: HSQL Database Engine, version: 2.2.4|#]
+
+[#|2016-01-03T17:13:36.552+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|JDBC driver: HSQL Database Engine Driver, version: 2.2.4|#]
+
+[#|2016-01-03T17:13:36.598+0100|INFO|glassfish3.1.2|org.hibernate.dialect.Dialect|_ThreadID=74;_ThreadName=Thread-2;|Using dialect: org.hibernate.dialect.HSQLDialect|#]
+
+[#|2016-01-03T17:13:36.607+0100|INFO|glassfish3.1.2|org.hibernate.transaction.TransactionFactoryFactory|_ThreadID=74;_ThreadName=Thread-2;|Transaction strategy: org.hibernate.ejb.transaction.JoinableCMTTransactionFactory|#]
+
+[#|2016-01-03T17:13:36.624+0100|INFO|glassfish3.1.2|org.hibernate.transaction.TransactionManagerLookupFactory|_ThreadID=74;_ThreadName=Thread-2;|instantiating TransactionManagerLookup: org.hibernate.transaction.SunONETransactionManagerLookup|#]
+
+[#|2016-01-03T17:13:36.627+0100|INFO|glassfish3.1.2|org.hibernate.transaction.TransactionManagerLookupFactory|_ThreadID=74;_ThreadName=Thread-2;|instantiated TransactionManagerLookup|#]
+
+[#|2016-01-03T17:13:36.628+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Automatic flush during beforeCompletion(): disabled|#]
+
+[#|2016-01-03T17:13:36.628+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Automatic session close at end of transaction: disabled|#]
+
+[#|2016-01-03T17:13:36.628+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|JDBC batch size: 15|#]
+
+[#|2016-01-03T17:13:36.629+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|JDBC batch updates for versioned data: disabled|#]
+
+[#|2016-01-03T17:13:36.629+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Scrollable result sets: enabled|#]
+
+[#|2016-01-03T17:13:36.630+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|JDBC3 getGeneratedKeys(): enabled|#]
+
+[#|2016-01-03T17:13:36.630+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Connection release mode: auto|#]
+
+[#|2016-01-03T17:13:36.631+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Default batch fetch size: 1|#]
+
+[#|2016-01-03T17:13:36.633+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Generate SQL with comments: disabled|#]
+
+[#|2016-01-03T17:13:36.634+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Order SQL updates by primary key: disabled|#]
+
+[#|2016-01-03T17:13:36.634+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Order SQL inserts for batching: disabled|#]
+
+[#|2016-01-03T17:13:36.635+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory|#]
+
+[#|2016-01-03T17:13:36.648+0100|INFO|glassfish3.1.2|org.hibernate.hql.ast.ASTQueryTranslatorFactory|_ThreadID=74;_ThreadName=Thread-2;|Using ASTQueryTranslatorFactory|#]
+
+[#|2016-01-03T17:13:36.648+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Query language substitutions: {}|#]
+
+[#|2016-01-03T17:13:36.650+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|JPA-QL strict compliance: enabled|#]
+
+[#|2016-01-03T17:13:36.650+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Second-level cache: enabled|#]
+
+[#|2016-01-03T17:13:36.650+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Query cache: disabled|#]
+
+[#|2016-01-03T17:13:36.655+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge|#]
+
+[#|2016-01-03T17:13:36.656+0100|INFO|glassfish3.1.2|org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge|_ThreadID=74;_ThreadName=Thread-2;|Cache provider: org.hibernate.cache.HashtableCacheProvider|#]
+
+[#|2016-01-03T17:13:36.658+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Optimize cache for minimal puts: disabled|#]
+
+[#|2016-01-03T17:13:36.658+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Structured second-level cache entries: disabled|#]
+
+[#|2016-01-03T17:13:36.662+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Echoing all SQL to stdout|#]
+
+[#|2016-01-03T17:13:36.663+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Statistics: disabled|#]
+
+[#|2016-01-03T17:13:36.663+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Deleted entity synthetic identifier rollback: disabled|#]
+
+[#|2016-01-03T17:13:36.664+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Default entity-mode: pojo|#]
+
+[#|2016-01-03T17:13:36.664+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Named query checking : enabled|#]
+
+[#|2016-01-03T17:13:36.665+0100|INFO|glassfish3.1.2|org.hibernate.cfg.SettingsFactory|_ThreadID=74;_ThreadName=Thread-2;|Check Nullability in Core (should be disabled when Bean Validation is on): disabled|#]
+
+[#|2016-01-03T17:13:36.713+0100|INFO|glassfish3.1.2|org.hibernate.impl.SessionFactoryImpl|_ThreadID=74;_ThreadName=Thread-2;|building session factory|#]
+
+[#|2016-01-03T17:13:37.010+0100|INFO|glassfish3.1.2|org.hibernate.impl.SessionFactoryObjectFactory|_ThreadID=74;_ThreadName=Thread-2;|Not binding factory to JNDI, no JNDI name configured|#]
+
+[#|2016-01-03T17:13:37.029+0100|INFO|glassfish3.1.2|org.hibernate.tool.hbm2ddl.SchemaExport|_ThreadID=74;_ThreadName=Thread-2;|Running hbm2ddl schema export|#]
+
+[#|2016-01-03T17:13:37.032+0100|INFO|glassfish3.1.2|org.hibernate.tool.hbm2ddl.SchemaExport|_ThreadID=74;_ThreadName=Thread-2;|exporting generated schema to database|#]
+
+[#|2016-01-03T17:13:37.185+0100|INFO|glassfish3.1.2|org.hibernate.tool.hbm2ddl.SchemaExport|_ThreadID=74;_ThreadName=Thread-2;|Executing import script: /import.sql|#]
+
+[#|2016-01-03T17:13:37.188+0100|INFO|glassfish3.1.2|org.hibernate.tool.hbm2ddl.SchemaExport|_ThreadID=74;_ThreadName=Thread-2;|schema export complete|#]
+
+[#|2016-01-03T17:13:37.201+0100|INFO|glassfish3.1.2|org.hibernate.util.NamingHelper|_ThreadID=74;_ThreadName=Thread-2;|JNDI InitialContext properties:{}|#]
+
+[#|2016-01-03T17:13:37.628+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.ejb.com.sun.ejb.containers|_ThreadID=74;_ThreadName=Thread-2;|EJB5181:Portable JNDI names for EJB TrumnaManager: [java:global/zakladPogrzebowy/TrumnaManager, java:global/zakladPogrzebowy/TrumnaManager!com.zakladPogrzebowy.serwis.TrumnaManager]|#]
+
+[#|2016-01-03T17:13:37.704+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.ejb.com.sun.ejb.containers|_ThreadID=74;_ThreadName=Thread-2;|EJB5181:Portable JNDI names for EJB PogrzebManager: [java:global/zakladPogrzebowy/PogrzebManager!com.zakladPogrzebowy.serwis.PogrzebManager, java:global/zakladPogrzebowy/PogrzebManager]|#]
+
+[#|2016-01-03T17:13:37.883+0100|INFO|glassfish3.1.2|org.jboss.weld.Version|_ThreadID=74;_ThreadName=Thread-2;|WELD-000900 1.1.8 (Final)|#]
+
+[#|2016-01-03T17:13:38.069+0100|WARNING|glassfish3.1.2|org.glassfish.weld.BeanDeploymentArchiveImpl|_ThreadID=74;_ThreadName=Thread-2;|Error while trying to load Bean Class org.richfaces.webapp.PushServlet : java.lang.NoClassDefFoundError: org/atmosphere/cpr/MeteorServlet|#]
+
+[#|2016-01-03T17:13:38.129+0100|WARNING|glassfish3.1.2|org.glassfish.weld.BeanDeploymentArchiveImpl|_ThreadID=74;_ThreadName=Thread-2;|Error while trying to load Bean Class org.richfaces.application.push.impl.RequestImpl : java.lang.NoClassDefFoundError: org/atmosphere/cpr/AtmosphereResourceEventListener|#]
+
+[#|2016-01-03T17:13:40.322+0100|INFO|glassfish3.1.2|javax.enterprise.resource.webcontainer.jsf.config|_ThreadID=74;_ThreadName=Thread-2;|Initializing Mojarra 2.1.6 (SNAPSHOT 20111206) for context '/zakladPogrzebowy'|#]
+
+[#|2016-01-03T17:13:42.139+0100|INFO|glassfish3.1.2|org.richfaces.log.Cache|_ThreadID=74;_ThreadName=Thread-2;|Selected fallback cache factory|#]
+
+[#|2016-01-03T17:13:42.142+0100|INFO|glassfish3.1.2|org.richfaces.log.Cache|_ThreadID=74;_ThreadName=Thread-2;|Creating LRUMap cache instance using parameters: {com.sun.faces.forceLoadConfiguration=true, com.sun.faces.validateXml=true}|#]
+
+[#|2016-01-03T17:13:42.190+0100|INFO|glassfish3.1.2|org.richfaces.log.Cache|_ThreadID=74;_ThreadName=Thread-2;|Creating LRUMap cache instance of 512 items capacity|#]
+
+[#|2016-01-03T17:13:42.218+0100|INFO|glassfish3.1.2|org.richfaces.log.Application|_ThreadID=74;_ThreadName=Thread-2;|RichFaces Core Implementation by JBoss, a division of Red Hat, Inc., version v.4.1.0.Final|#]
+
+[#|2016-01-03T17:13:42.459+0100|INFO|glassfish3.1.2|javax.enterprise.system.container.web.com.sun.enterprise.web|_ThreadID=74;_ThreadName=Thread-2;|WEB0671: Loading application [zakladPogrzebowy] at [/zakladPogrzebowy]|#]
+
+[#|2016-01-03T17:13:42.884+0100|INFO|glassfish3.1.2|javax.enterprise.system.tools.admin.org.glassfish.deployment.admin|_ThreadID=74;_ThreadName=Thread-2;|zakladPogrzebowy was successfully deployed in 9 063 milliseconds.|#]
+
+[#|2016-01-03T17:13:58.918+0100|SEVERE|glassfish3.1.2|javax.enterprise.system.ssl.security.com.sun.enterprise.security.ssl.impl|_ThreadID=44;_ThreadName=Thread-2;|SEC5054: Certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  modulus: 23741889829347261660812437366387754385443431973861114865490414153884050331745811968523116847625570146592736935209718565296053386842135985534863157983128812774162998053673746470782252407673402238146869994438729551246768368782318393878374421033907597162218758024581735139682087126982809511479059100617027892880227587855877479432885604404402435662802390484099065871430585284534529627347717530352189612077130606642676951640071336717026459037542552927905851171460589361570392199748753414855675665635003335769915908187224347232807336022456537328962095005323382940080676931822787496212635993279098588863972868266229522169377
+  public exponent: 65537
+  Validity: [From: Fri Aug 14 16:50:00 CEST 1998,
+               To: Thu Aug 15 01:59:00 CEST 2013]
+  Issuer: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  SerialNumber: [    01b6]
+
+Certificate Extensions: 4
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:5
+]
+
+[2]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [1.2.840.113763.1.2.1.3]
+[]  ]
+]
+
+[3]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[4]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 76 0A 49 21 38 4C 9F DE   F8 C4 49 C7 71 71 91 9D  v.I!8L....I.qq..
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 41 3A D4 18 5B DA B8 DE   21 1C E1 8E 09 E5 F1 68  A:..[...!......h
+0010: 34 FF DE 96 F4 07 F5 A7   3C F3 AC 4A B1 9B FA 92  4.......<..J....
+0020: FA 9B ED E6 32 21 AA 4A   76 C5 DC 4F 38 E5 DF D5  ....2!.Jv..O8...
+0030: 86 E4 D5 C8 76 7D 98 D7   B1 CD 8F 4D B5 91 23 6C  ....v......M..#l
+0040: 8B 8A EB EA 7C EF 14 94   C4 C6 F0 1F 4A 2D 32 71  ............J-2q
+0050: 63 2B 63 91 26 02 09 B6   80 1D ED E2 CC B8 7F DB  c+c.&...........
+0060: 87 63 C8 E1 D0 6C 26 B1   35 1D 40 66 10 1B CD 95  .c...l&.5.@f....
+0070: 54 18 33 61 EC 13 4F DA   13 F7 99 AF 3E D0 CF 8E  T.3a..O.....>...
+0080: A6 72 A2 B3 C3 05 9A C9   27 7D 92 CC 7E 52 8D B3  .r......'....R..
+0090: AB 70 6D 9E 89 9F 4D EB   1A 75 C2 98 AA D5 02 16  .pm...M..u......
+00A0: D7 0C 8A BF 25 E4 EB 2D   BC 98 E9 58 38 19 7C B9  ....%..-...X8...
+00B0: 37 FE DB E2 99 08 73 06   C7 97 83 6A 7D 10 01 2F  7.....s....j.../
+00C0: 32 B9 17 05 4A 65 E6 2F   CE BE 5E 53 A6 82 E9 9A  2...Je./..^S....
+00D0: 53 0A 84 74 2D 83 CA C8   94 16 76 5F 94 61 28 F0  S..t-.....v_.a(.
+00E0: 85 A7 39 BB D7 8B D9 A8   B2 13 1D 54 09 34 24 7D  ..9........T.4$.
+00F0: 20 81 7D 66 7E A2 90 74   5C 10 C6 BD EC AB 1B C2   ..f...t\.......
+
+]|#]
+
+[#|2016-01-03T17:14:04.447+0100|SEVERE|glassfish3.1.2|javax.enterprise.system.ssl.security.com.sun.enterprise.security.ssl.impl|_ThreadID=44;_ThreadName=Thread-2;|SEC5054: Certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  modulus: 23741889829347261660812437366387754385443431973861114865490414153884050331745811968523116847625570146592736935209718565296053386842135985534863157983128812774162998053673746470782252407673402238146869994438729551246768368782318393878374421033907597162218758024581735139682087126982809511479059100617027892880227587855877479432885604404402435662802390484099065871430585284534529627347717530352189612077130606642676951640071336717026459037542552927905851171460589361570392199748753414855675665635003335769915908187224347232807336022456537328962095005323382940080676931822787496212635993279098588863972868266229522169377
+  public exponent: 65537
+  Validity: [From: Fri Aug 14 16:50:00 CEST 1998,
+               To: Thu Aug 15 01:59:00 CEST 2013]
+  Issuer: CN=GTE CyberTrust Root 5, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  SerialNumber: [    01b6]
+
+Certificate Extensions: 4
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:5
+]
+
+[2]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [1.2.840.113763.1.2.1.3]
+[]  ]
+]
+
+[3]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[4]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 76 0A 49 21 38 4C 9F DE   F8 C4 49 C7 71 71 91 9D  v.I!8L....I.qq..
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 41 3A D4 18 5B DA B8 DE   21 1C E1 8E 09 E5 F1 68  A:..[...!......h
+0010: 34 FF DE 96 F4 07 F5 A7   3C F3 AC 4A B1 9B FA 92  4.......<..J....
+0020: FA 9B ED E6 32 21 AA 4A   76 C5 DC 4F 38 E5 DF D5  ....2!.Jv..O8...
+0030: 86 E4 D5 C8 76 7D 98 D7   B1 CD 8F 4D B5 91 23 6C  ....v......M..#l
+0040: 8B 8A EB EA 7C EF 14 94   C4 C6 F0 1F 4A 2D 32 71  ............J-2q
+0050: 63 2B 63 91 26 02 09 B6   80 1D ED E2 CC B8 7F DB  c+c.&...........
+0060: 87 63 C8 E1 D0 6C 26 B1   35 1D 40 66 10 1B CD 95  .c...l&.5.@f....
+0070: 54 18 33 61 EC 13 4F DA   13 F7 99 AF 3E D0 CF 8E  T.3a..O.....>...
+0080: A6 72 A2 B3 C3 05 9A C9   27 7D 92 CC 7E 52 8D B3  .r......'....R..
+0090: AB 70 6D 9E 89 9F 4D EB   1A 75 C2 98 AA D5 02 16  .pm...M..u......
+00A0: D7 0C 8A BF 25 E4 EB 2D   BC 98 E9 58 38 19 7C B9  ....%..-...X8...
+00B0: 37 FE DB E2 99 08 73 06   C7 97 83 6A 7D 10 01 2F  7.....s....j.../
+00C0: 32 B9 17 05 4A 65 E6 2F   CE BE 5E 53 A6 82 E9 9A  2...Je./..^S....
+00D0: 53 0A 84 74 2D 83 CA C8   94 16 76 5F 94 61 28 F0  S..t-.....v_.a(.
+00E0: 85 A7 39 BB D7 8B D9 A8   B2 13 1D 54 09 34 24 7D  ..9........T.4$.
+00F0: 20 81 7D 66 7E A2 90 74   5C 10 C6 BD EC AB 1B C2   ..f...t\.......
+
+]|#]
+
+[#|2016-01-03T17:14:04.531+0100|INFO|glassfish3.1.2|org.glassfish.admingui|_ThreadID=44;_ThreadName=Thread-2;|Redirecting to /|#]
+
+[#|2016-01-03T17:14:04.818+0100|INFO|glassfish3.1.2|org.glassfish.admingui|_ThreadID=47;_ThreadName=Thread-2;|Admin Console: Initializing Session Attributes...|#]
+
+[#|2016-01-03T17:14:46.556+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=115;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:14:46.868+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=115;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:14:47.013+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=115;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:14:48.812+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=113;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:14:48.947+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=113;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:14:49.076+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=113;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:14:49.206+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=113;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:14:49.347+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=113;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:14:49.478+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=113;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:14:49.627+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=113;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:14:49.759+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=113;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:14:49.896+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=113;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:14:52.269+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=112;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:14:52.532+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=112;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:14:52.697+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=112;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:14:53.852+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=115;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:14:53.978+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=115;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:14:54.107+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=115;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:14:54.229+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=115;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:14:54.360+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=115;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:14:54.490+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=115;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:14:54.610+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=115;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:14:54.757+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=115;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:14:54.933+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=115;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:14:56.388+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=114;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:14:56.524+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=114;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:14:56.675+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=114;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:15:10.088+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=111;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:15:10.229+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=111;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:15:10.351+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=111;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:15:10.492+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=111;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:15:10.645+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=111;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:15:10.776+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=111;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:15:10.913+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=111;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:15:11.050+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=111;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:15:11.170+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=111;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:15:11.312+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=111;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:15:12.669+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=113;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:15:12.791+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=113;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:15:12.915+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=113;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:15:14.161+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=112;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:15:14.287+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=112;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:15:14.417+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=112;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:15:14.543+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=112;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:15:14.671+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=112;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:15:14.790+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=112;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:15:14.914+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=112;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:15:15.042+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=112;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:15:15.175+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=112;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:15:16.558+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=115;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:15:16.675+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=115;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:15:16.804+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=115;_ThreadName=Thread-2;|Hibernate: select pogrzeb0_.id as id0_, pogrzeb0_.cena as cena0_, pogrzeb0_.data as data0_, pogrzeb0_.opis as opis0_, pogrzeb0_.id_religia as id5_0_ from Pogrzeb pogrzeb0_|#]
+
+[#|2016-01-03T17:15:19.760+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=114;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:15:19.887+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=114;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
+[#|2016-01-03T17:15:20.017+0100|INFO|glassfish3.1.2|javax.enterprise.system.std.com.sun.enterprise.server.logging|_ThreadID=114;_ThreadName=Thread-2;|Hibernate: select trumna0_.id as id1_, trumna0_.cena as cena1_, trumna0_.ilosc as ilosc1_, trumna0_.rodzaj as rodzaj1_ from Trumna trumna0_|#]
+
