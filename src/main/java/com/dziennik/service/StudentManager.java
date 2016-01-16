@@ -7,7 +7,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import com.dziennik.domain.Student;
+import com.dziennik.domain.*;
 
 @Stateless
 public class StudentManager {
@@ -18,12 +18,12 @@ public class StudentManager {
         return em.find(Student.class, id);
     }
     
-	public void addStudent(Student student) {
+	public void add(Student student) {
 		student.setId(null);
 		student.setCreatedAt(new Date());
 		em.persist(student);
 	}
-	public void updateStudent(Long id, String name, String surname, String sex, long pesel){
+	public void update(Long id, String name, String surname, String sex, long pesel){
 		Student student = em.find(Student.class, id);
 		student.setName(name);
 		student.setSurname(surname);
@@ -42,4 +42,24 @@ public class StudentManager {
 	public List<Student> getAllStudent() {
 		return em.createNamedQuery("student.all").getResultList();
 	}
+	public List<Student> getStudents(int offset, int limit){
+        //noinspection unchecked
+        return em.createNamedQuery("student.all").
+                setFirstResult(offset).
+                setMaxResults(limit).
+                getResultList();
+    }
+	
+	public Long getCount() {
+        return (Long) em.createQuery("select count(s) from Student s").getSingleResult();
+    }
+
+    public void addComment(Student student, Comment comment) {
+        List<Comment> comments = student.getComments();
+        comments.add(comment);
+
+        student.setComments(comments);
+
+        em.merge(student);
+    }
 }

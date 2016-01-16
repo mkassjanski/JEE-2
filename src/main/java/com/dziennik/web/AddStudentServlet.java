@@ -29,7 +29,7 @@ public class AddStudentServlet extends HttpServlet{
         newStudent.setSex(sex);
         newStudent.setPesel(pesel);
 
-        studentStorage.addStudent(newStudent);
+        studentStorage.add(newStudent);
 
         response.sendRedirect(response.encodeRedirectURL(request.getContextPath() + "/main"));
     }

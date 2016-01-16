@@ -10,4 +10,11 @@ public class WebUtils {
 
         return Long.valueOf(studentID);
     }
+	public static void redirectToMainPage(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        response.sendRedirect(response.encodeRedirectURL(request.getContextPath() + "/main"));
+    }
+
+    public static void redirectToStudentView(HttpServletRequest request, HttpServletResponse response, Long id) throws IOException {
+        response.sendRedirect(response.encodeRedirectURL(request.getContextPath() + "/view/" + id));
+    }
 }

@@ -10,8 +10,8 @@ import java.util.List;
 })
 public class Student implements Serializable {
 	 @Id
-	    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	 	private Long id;
+     @GeneratedValue(strategy = GenerationType.IDENTITY)
+ 	 private Long id;
 	 
 	 private String name;
 	 private String surname;
@@ -21,6 +21,10 @@ public class Student implements Serializable {
 
 	 @Temporal(TemporalType.DATE)
 	 private Date createdAt;
+	 
+	 
+	 @OneToMany(fetch = FetchType.EAGER)
+	 private List<Comment> comments;
 	 
      public Student() {
         super();
@@ -87,4 +91,13 @@ public class Student implements Serializable {
 	}
 
 
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
+    }
+
+	
 }

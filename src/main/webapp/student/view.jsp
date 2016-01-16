@@ -30,5 +30,57 @@
         <label>Created:</label>
         ${student.createdAt} <br/>
 </div>
+<p>Comments:</p>
+        <div>
+            <c:choose>
+                <c:when test="${comments.size() > 0}">
+                    <c:forEach var="comment" items="${comments}" varStatus="loop">
+                        <p>Date: ${comment.createdAt}</p>
+                        <p>Author: ${comment.author}</p>
+                        <p>${comment.message}</p>
+
+                        <c:if test="${!loop.last}">
+                        </c:if>
+
+                    </c:forEach>
+                </c:when>
+                <c:otherwise>
+                    No notes yet!
+                </c:otherwise>
+            </c:choose>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3>Add comment:</h3>
+            <br/>
+
+            <form action="${pageContext.request.contextPath}/comments/add/${student.id}" method="post">
+                <div>
+                    <label for="author">Author:</label>
+
+                    <div>
+                        <input type="text" name="author" id="author">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="message">Message:</label>
+
+                    <div>
+                        <input type="text" name="message" id="message">
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <button type="submit">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
 </body>
 </html>
