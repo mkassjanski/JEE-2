@@ -43,7 +43,7 @@
                                 <a href="../comment/edit/${comment.id}">
                                     Edit
                                 </a>
-                                <a href="../comment/remove/${comment.id}">
+                                <a href="../comment/remove/${student.id}_${comment.id}">
                                     Remove
                                 </a>
                         <c:if test="${!loop.last}">

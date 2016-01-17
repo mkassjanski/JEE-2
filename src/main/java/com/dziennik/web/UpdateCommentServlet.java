@@ -33,6 +33,6 @@ public class UpdateCommentServlet extends HttpServlet{
 
         storage.updateComment(commentID, name, surname, sex);
 
-        WebUtils.redirectToStudentView(request, response, commentID);
+        WebUtils.redirectToMainPage(request, response);
     }
 }

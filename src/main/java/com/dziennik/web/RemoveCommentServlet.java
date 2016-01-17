@@ -14,11 +14,11 @@ public class RemoveCommentServlet extends HttpServlet{
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Long commentID = WebUtils.getStudentID(request);
-        Long k = (long) 1;
+        Long studentID2 = WebUtils.getStudentID2(request);
+        Long commentID = WebUtils.getStudentID3(request);
         
-        storage.deleteComment(commentID,k);
+        storage.deleteComment(commentID,studentID2);
 
-        WebUtils.redirectToMainPage(request, response);
+        WebUtils.redirectToStudentView(request, response, studentID2);
     }
 }
