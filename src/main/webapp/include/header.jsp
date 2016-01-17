@@ -9,7 +9,7 @@
 <body>
 <nav>
 <ul>
-<li><a href="/main">Home</a></li>
+<li><a href="/dziennik/">Home</a></li>
 <li><a href="/dziennik/showAllUczen.jsp">Lista uczniów</a></li>
 <li><a href="/dziennik/showAllPrzedmiot.jsp">Lista przedmiotów</a></li>
 </ul>
