@@ -35,10 +35,17 @@
             <c:choose>
                 <c:when test="${comments.size() > 0}">
                     <c:forEach var="comment" items="${comments}" varStatus="loop">
+                    	<p>Id: ${comment.id}</p>
                         <p>Date: ${comment.createdAt}</p>
                         <p>Author: ${comment.author}</p>
+                        <p>${comment.type}</p>
                         <p>${comment.message}</p>
-
+                                <a href="../comment/edit/${comment.id}">
+                                    Edit
+                                </a>
+                                <a href="../comment/remove/${comment.id}">
+                                    Remove
+                                </a>
                         <c:if test="${!loop.last}">
                         </c:if>
 
@@ -61,6 +68,14 @@
 
                     <div>
                         <input type="text" name="author" id="author">
+                    </div>
+                </div>
+
+				<div>
+                    <label for="author">Type:</label>
+
+                    <div>
+                        <input type="text" name="type" id="type">
                     </div>
                 </div>
 

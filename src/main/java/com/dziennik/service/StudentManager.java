@@ -18,6 +18,10 @@ public class StudentManager {
         return em.find(Student.class, id);
     }
     
+    public Comment getC(Long id) {
+        return em.find(Comment.class, id);
+    }
+    
 	public void add(Student student) {
 		student.setId(null);
 		student.setCreatedAt(new Date());
@@ -33,8 +37,9 @@ public class StudentManager {
         em.merge(student);
 	}
 	
-	public void deleteStudent(Student student) {
-		student = em.find(Student.class, student.getId());
+	
+	public void delete(Long id) {
+		Student student = em.find(Student.class, id);
 		em.remove(student);
 	}
 
@@ -62,4 +67,23 @@ public class StudentManager {
 
         em.merge(student);
     }
+    
+    public void updateComment(Long id, String type, String message, String author){
+    	Comment comment = em.find(Comment.class, id);
+    	comment.setType(type);
+    	comment.setMessage(message);
+    	comment.setAuthor(author);
+
+        em.merge(comment);
+	}
+    
+	public void deleteComment(Long idC, Long idS) {
+		Comment comment = em.find(Comment.class, idC);
+		Student student = em.find(Student.class, idS);
+		List<Comment> comments = student.getComments();
+		comments.remove(comment);
+		student.setComments(comments);
+		em.merge(student);
+	}
+    
 }

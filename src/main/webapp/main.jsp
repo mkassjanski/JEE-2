@@ -39,6 +39,14 @@
                                 <a href="view/${student.id}">
                                     View
                                 </a>
+                                |
+                                <a href="edit/${student.id}">
+                                    Edit
+                                </a>
+                                |
+                                <a href="remove/${student.id}">
+                                    Remove
+                                </a>
                             </td>
                         </tr>
                     </c:forEach>

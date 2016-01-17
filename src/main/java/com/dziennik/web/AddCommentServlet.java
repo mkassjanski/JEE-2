@@ -21,6 +21,7 @@ public class AddCommentServlet extends HttpServlet{
         Long messageID = WebUtils.getStudentID(request);
         Student student = studentStorage.get(messageID);
 
+        String type = request.getParameter("type");
         String commentText = request.getParameter("message");
         String author = request.getParameter("author");
 
@@ -28,6 +29,7 @@ public class AddCommentServlet extends HttpServlet{
         comment.setMessage(commentText);
         comment.setAuthor(author);
         comment.setCreatedAt(new Date());
+        comment.setType(type);
 
         studentStorage.addComment(student, comment);
 
