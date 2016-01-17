@@ -22,7 +22,7 @@ public class ViewStudentServlet extends HttpServlet{
 		
 		Student student = studentStorage.get(studentID);
 		request.setAttribute("student", student);
-		request.setAttribute("notes", student.getComments());
+		request.setAttribute("comments", student.getComments());
 		request.getRequestDispatcher("/student/view.jsp").forward(request, response);
     }
 }

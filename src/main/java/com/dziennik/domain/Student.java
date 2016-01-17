@@ -23,7 +23,7 @@ public class Student implements Serializable {
 	 private Date createdAt;
 	 
 	 
-	 @OneToMany(fetch = FetchType.EAGER)
+	 @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	 private List<Comment> comments;
 	 
      public Student() {
