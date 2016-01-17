@@ -1,4 +1,5 @@
 package com.dziennik.domain;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
